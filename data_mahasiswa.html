@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+       <style>
+        body {font-family: Arial, sans-serif; background-color: #f4f8ff;margin: 20px;}
+        h1 {color: #1a56b0;text-align: center;}
+        table {border-collapse: collapse; width: 100%; background-color: white;}
+        th {background-color: #1a56b0; color: white; padding: 10px; border: 1px solid #ccd;}
+        td {border: 1px solid #ccd; padding: 10px; text-align: center;}
+        .aktif {background-color: #e6eefb;}
+        #judul {font-size: 24px;}
+    </style>
+</head>
+<body>
+    <h1 id="judul">Formulir Pendaftaran Mahasiswa</h1>
+    <form action="proses.php" method="post">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+        <br><br>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jk" value="Laki-laki">
+        Laki-laki
+        <input type="radio" name="jk" value="Perempuan">
+        Perempuan
+        <br><br>
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi" value="Membaca">
+        Membaca
+        <input type="checkbox" name="hobi" value="Musik">
+        Musik
+        <br><br>
+        <label>Program Studi:</label>
+        <select name="prodi">
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknologi Informasi">Teknologi Informasi</option>
+        </select>
+        <br><br>
+        <label>Alamat:</label>
+        <br>
+        <textarea name="alamat" rows="4" cols="35"></textarea>
+        <br><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+    <!-- Tabel data lima mahasiswa -->
+     <h1>Daftar Mahasiswa</h1>
+     <table>
+        <tr>
+        <th colspan="4"> Daftar Mahasiswa</th>
+        </tr>
+    <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Prodi</th>
+        <th>IPK</th>
+    </tr>
+    <tr>
+        <td>2425</td>
+        <td>Budi Santoso</td>
+        <td>Informatika</td>
+        <td>3,60</td>
+    </tr>
+    <tr>
+        <td>2545</td>
+        <td>Sari wulandari</td>
+        <td>Sistem Informasi</td>
+        <td>3,45</td>
+    </tr>
+    <tr>
+        <td>2367</td>
+        <td>Andi Cobra</td>
+        <td>Teknologi Informasi</td>
+        <td>3,70</td>
+    </tr>
+    <tr>
+        <td>23004</td>
+        <td>Dewi Lestari</td>
+        <td>Sistem Informasi</td>
+        <td>3.65</td>
+    </tr>
+    <tr> 
+        <td>23005</td>
+        <td>Rina Putri</td>
+        <td>Teknologi Informatika</td>
+        <td>3.90</td>
+    </tr>
+</table>
+</body>
+</html>
